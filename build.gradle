@@ -17,6 +17,12 @@ dependencies {
 	testImplementation('org.springframework.boot:spring-boot-starter-test') {
 		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
 	}
+	testImplementation 'io.rest-assured:rest-assured:4.1.2'
+	testImplementation 'io.rest-assured:rest-assured-common:4.1.2'
+	testImplementation 'io.rest-assured:json-path:4.1.2'
+	testImplementation 'io.rest-assured:xml-path:4.1.2'
+	compileOnly 'org.projectlombok:lombok'
+	annotationProcessor 'org.projectlombok:lombok'
 }
 
 test {
